@@ -1,0 +1,19 @@
+---
+nginx_port: 80
+nginx_owner: "root"
+nginx_group: "root"
+nginx_hostname: "nginx.hemanth.store"
+doc_root: "/var/www/{{nginx_hostname}}"
+mariadb_root_password: "mysqlroot123"
+mariadb_extra_user: "wordpress"
+mariadb_extra_password: "wordpress"
+mariadb_extra_database: "wordpress"
+wp_url: "https://wordpress.org/latest.zip"
+packages:
+  - nginx
+  - php
+  - php-fpm
+  - php-mysql
+  - unzip
+  - mariadb-server
+  - python3-mysqldb
