@@ -31,3 +31,6 @@ amazon-linux-extras ansible2 -y
 Please create your client key.pem file and hosts (Inventory) file manually and please copy the same to the working directory which you used.
 
 ```
+ansible -i hosts all -m ping <========== its just check your master and client connection with your inventory file which you copied or create manually.
+ansible-playbook -i hosts playbook.yml
+```
