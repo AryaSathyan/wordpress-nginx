@@ -20,3 +20,14 @@ It's just a try for application provision through ansible. Maybe it has bugs wit
 - MySQL
 - WordPress 5.7
 - Ansible2 (Ansible-Master. Please note that I have used master server is RedHat Distributer "amazon-linux")
+
+## How to Use:
+
+```
+yum install git -y
+amazon-linux-extras ansible2 -y
+```
+
+Please create your client key.pem file and hosts (Inventory) file manually and please copy the same to the working directory which you used.
+
+```
